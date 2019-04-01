@@ -1,23 +1,32 @@
 <head>
-<meta charset="utf-8"/>
-<style>
-	img,audio,div {
-    	display: block;
-    	margin: 0 auto;
-	}
+	<meta charset="utf-8"/>
 	
-	body {
-font-family: courier, serif;
-font-size: 20;
-font-weight: 800;
-}
-</style>
+	<style>
+		img,audio,p,button {
+    		display: block;
+    		margin: 0 auto;
+    		text-align: center;
+		}
+		p{
+		font-size:40;
+		}
+		body,button {
+		font-family: courier, serif;
+		font-size: 20;
+		font-weight: 800;
+		}
+	</style>
+	
+	<script>
+	function goBack() {
+  	window.history.back();
+	}
+	</script>
+	
 </head>
 
-<body>
-<div>
+<body><p>404</p>
 
-</div>
 	<img src="mysteries/mystery.jpg"></img>
  	<audio autoplay loop>
   	<source src="mysteries/mystery.mp3" type="audio/mpeg">
@@ -25,4 +34,6 @@ font-weight: 800;
 	</audio> 
 	<marquee behavior="scroll" direction="left"> This page is still a mystery! </marquee>
 	<marquee behavior="scroll" direction="right"> Check back later! </marquee>
+	
+	<button onclick="goBack()">Go Back</button>
 </body>
